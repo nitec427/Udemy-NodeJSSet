@@ -14,8 +14,9 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(public_path));
 // app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
 app.get('/', (req, res) => {
-    res.render('index', {});
+    res.render('index');
 });
 app.get('/about', (req, res) => {
     // The code below sends a JSON to the HTML page
