@@ -1,0 +1,12 @@
+.nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+nav {
+    height: 6rem;
+}
+.show__message {
+    padding-top: 2rem;
+    height: 10rem;
+}

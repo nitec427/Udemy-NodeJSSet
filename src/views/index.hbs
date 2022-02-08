@@ -1,0 +1,23 @@
+{{>head}}
+        {{>navbar}}
+        <div class='container'>
+            This is my official webpage.
+            <h1>{{title}} {{name}}</h1>
+
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email address" id="email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <input class="form-control city-input" type="text" name="address" placeholder="Enter your city">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+
+            <div class="show__message text-center text-white">
+                {{!-- Add class danger or success and configure innerHTML --}}
+            </div>
+            <script src="js/example.js"></script>
+            
+        </div>
+{{>footer}}
