@@ -5,6 +5,7 @@ const hbs = require('hbs');
 const request = require('request');
 const geocode = require('./utils/geocode');
 const weather = require('./utils/weather');
+const port = process.env.PORT || 3000; // Either use the port provide by Heroku or use the default port
 // Configuring paths to necessary locations
 const public_path = path.join(__dirname, '../public');
 const partialsPath = path.join(__dirname, '/partials');
@@ -65,6 +66,6 @@ app.get('*', (req, res) => {
         message: 'This page is not available',
     });
 });
-app.listen((port = 3000), () => {
+app.listen(port, () => {
     console.log('Server is on up' + port);
 });
