@@ -9,12 +9,12 @@ const port = process.env.PORT || 3000; // Either use the port provide by Heroku 
 // Configuring paths to necessary locations
 const public_path = path.join(__dirname, '../public');
 const partialsPath = path.join(__dirname, '/partials');
-
+console.log(public_path);
 hbs.registerPartials(partialsPath);
 app.use(express.static(public_path));
 // app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/views'));
 app.get('/', (req, res) => {
     res.render('index');
 });
