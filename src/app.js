@@ -5,6 +5,7 @@ const hbs = require('hbs');
 const request = require('request');
 const geocode = require('./utils/geocode');
 const weather = require('./utils/weather');
+console.log(process.env.PORT);
 const port = process.env.PORT || 3000; // Either use the port provide by Heroku or use the default port
 // Configuring paths to necessary locations
 const public_path = path.join(__dirname, '../public');
